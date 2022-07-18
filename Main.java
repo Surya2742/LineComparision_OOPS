@@ -41,11 +41,8 @@ public static void main(String[] args) {
 		Double lineLength2 = line1.getLengthLine1(P3, P4);
 		System.out.println("Line 1 Length:" +lineLength1);
 		System.out.println("Line 2 Length:" +lineLength2);
-		
-		if (lineLength1.equals(lineLength2))
-            System.out.println("Line1 and Line2 are equal");
-        else 
-	           System.out.println("Line1 and Line2 are not equal");
+		Line line = new Line();
+		line.compare(lineLength1, lineLength2);
  }
 
 }
